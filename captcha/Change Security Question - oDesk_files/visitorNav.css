@@ -1,0 +1,65 @@
+body.visitor{ background: none !important}
+#uma {margin:auto; margin-bottom:.8em; min-width:970px; background:#fff; font-size:12pt; line-height:1.2em; border:none}
+#uma.visitorMessage.buyer {background-color:#1D5085}
+#uma.visitorMessage.provider {background-color:#336600}
+#uma.visitorMessage .messageSpace {width:950px; margin:auto;}
+#uma .block {padding:1.4em 2em 1.4em .5em; float:left}
+#uma.buyer .block .content {background-color:inherit; background:url(/images/visitor_nav/nve_gradiant.png) repeat-x; border: 2px solid #3AA0FF; position:relative; height:90px; -moz-box-shadow: 0px 2px 5px #14314F; -webkit-box-shadow: 0px 2px 5px #14314F}
+#uma.provider .block .content {background-color:inherit; background:url(/images/visitor_nav/nve_gradiant.png) repeat-x 0 -250px #457F28; border: 2px solid #66CC00; position:relative; height:90px; -moz-box-shadow: 0px 2px 5px #172F00; -webkit-box-shadow: 0px 2px 5px #172F00}
+#uma .block .arrow {position:absolute; background: url(/images/visitor_nav/nve_sprites.png) no-repeat -450px 0 transparent; height:40px; width:30px; top: 25px; left: 286px}
+#uma .block .message {display:block; color:#fff; font-weight:bold; text-shadow:1px 1px 1px #000; padding: .4em 0 .4em .8em}
+#uma .block .message a {text-shadow: none; color: yellow; font-weight: normal; font-size: .8em}
+#uma .block.one {width:284px; padding-left:0px}
+#uma .block.two {width:315px}
+#uma .block.three {width:268px; margin-right:0; padding-right:0}
+#uma .block.one .message {width:140px}
+#uma .block.two .message {width:170px}
+#uma .block.three .message {width:130px}
+#uma .block.two .arrow {left:318px}
+#uma .block .icon {background-color:inherit; height:99px; width:118px; position:absolute; margin-right:1em}
+#uma .block .icon.manAtDesk {background:url(/images/visitor_nav/nve_sprites.png) no-repeat 0px 0; top:-15px; left:156px}
+#uma .block .icon.computerClock {background:url(/images/visitor_nav/nve_sprites.png) no-repeat -150px 0; top:-15px; left:190px}
+#uma .block .icon.invoiceHand {background:url(/images/visitor_nav/nve_sprites.png) no-repeat -300px 0; top:-10px; left:128px; width:130px; margin-right:0}
+#uma .block .icon.computerNoClock {background:url(/images/visitor_nav/nve_sprites.png) no-repeat -150px -150px; top:-15px; left:190px}
+#uma .block .icon.invoiceCash {background:url(/images/visitor_nav/nve_sprites.png) no-repeat -300px -150px; top:-15px; left:140px; width:137px; margin-right:0}
+#visitorHeader {min-width:970px; font-family:Tahoma,sans-serif}
+#visitorHeader .header {width:950px; margin:auto; margin-top:15px; margin-bottom:15px; font-size:100%}
+a.linkButton.primary, input.formButton.primary {background:url(/assets/btn_mid.gif) repeat-x scroll left top #FFCC00; border-color:#FFDA47 #A58400 #A58400 #FFDA47; border-style:solid; border-width:2px}
+a.linkButton.primary.postJob {position: absolute; right:1px; margin:-10px 0 0 0; padding:5px 50px}
+a.linkButton, input.formButton {-moz-border-radius:0.4em 0.4em 0.4em 0.4em; color:#000000; cursor:pointer; font-size:1.2em; font-weight:bold; padding:0.2em 1em}
+#visitorHeader .logoArea {font-family:Tahoma,sans-serif; font-size:11pt; font-weight:bold; color:#9c9c9c; float:left}
+#visitorHeader .accountLinks {float:right; margin-top:1.6em}
+#visitorHeader #signIn {font-weight:normal; font-size:10pt; margin-right:2em}
+#visitorHeader .accountLinks .createAccount {font-size:11pt}
+.ie #visitorHeader .accountLinks .createAccount {display: inline-block }
+#visitorHeader a#homeLink {background:url(/images/visitor_nav/logo.png) no-repeat; display:inline-block; height:36px; width:135px; margin-right:.4em}
+#visitorHeader .primaryNav {background-color:#F7F1E5; margin-bottom:3px}
+#visitorHeader .content {width:950px; margin:auto; height: 43px}
+#visitorHeader .tabs {width: 450px; float:left; position: relative; left:0; right:0; padding:0px; margin:0px}
+#visitorHeader .tabs li {display:inline-block; float: left; font-size:13pt; font-weight:bold; margin:0; padding:0; margin-top:5px; padding:.4em 1.2em .4em 1.2em; -moz-border-radius-topleft:3px; -moz-border-radius-topright:3px; -webkit-border-top-left-radius:3px; -webkit-border-top-right-radius:3px; background: none}
+#visitorHeader .tabs li.pipe {width:1px; height:31px; margin:0; padding:0; top:.4em; position:relative}
+#visitorHeader .tabs li a {color:#7B7872; text-decoration:none; padding: 0px; background: none}
+#visitorHeader .tabs li a:hover {text-decoration:underline}
+#visitorHeader .tabs li.nav-current {background-color:white; color:#000; height: 26px}
+#visitorHeader .tabs li.nav-current a {color:#000}
+#visitorHeader .secondaryNav {margin:auto; width:950px; padding:.8em}
+#visitorHeader .secondaryNav ul {margin-left:.5em; margin:0; padding:0}
+#visitorHeader .secondaryNav li {display:inline; color:#e5e5e5; font-size:11pt}
+#visitorHeader .secondaryNav li a{ margin:0 1.2em}
+#visitorHeader .secondaryNav li a.nav-current.home {color:black}
+#visitorHeader .secondaryNav li.nav-current a {margin:0 1.1em; font-size:12pt; font-weight:bold}
+#visitorHeader .search {float:right; margin-right: 0px; margin-top:0px; font-size:11pt; padding-top:.7em; left:0; right:0}
+#visitorHeader .search .inputBox {border:1px solid #ccc; margin:0; -moz-border-radius:4px; -webkit-border-radius:4px; background-color:#fff}
+#visitorHeader .search input[type="text"]{ border:0; -moz-border-radius:5px; font-size:inherit; padding:0 .5em 0 .3em; margin-right:0px; margin-left:0px; position:relative; height:1.55em; width: 180px; outline: none}
+#visitorHeader .search input[type="text"]:focus {outline: none}
+#visitorHeader .inputHint {color:#aaa; font-style:italic}
+#visitorHeader .search input[type="submit"]{ -moz-border-radius-topleft:0px; -moz-border-radius-bottomleft:0px; -webkit-border-top-left-radius:0px; -webkit-border-bottom-left-radius:0px; border:0; border-left:1px solid #ccc; margin:0; font-size:90%; padding:0 .5em; height:1.9em; background:url(/assets/btn_mid.gif) repeat-x scroll left top #ccc}
+.clearb {clear:both}
+#visitorHeader .primaryNav{ background-color:#EBF0F7; border-bottom:2px solid #D5DFE1}
+#visitorHeader .content{ height:39px}
+#visitorHeader .tabs .nav-current {margin:5px 1px 0 0; padding: 0.34em 1.2em 0.48em}
+#visitorHeader .tabs li {background:none repeat scroll 0 0 #EBF0F7; margin:0px 1px 0px 0px; padding: 0.6em 1.2em 0.1em; height:27px}
+#visitorHeader .tabs li.nav-current {height:24px; margin:5px 1px 0 0}
+#visitorHeader .tabs li a {color:#666}
+#visitorHeader a#homeLink {background:url(/images/logo_sprite.png) no-repeat scroll 0 0 transparent}
+#visitorHeader .tabs {background:url(/images/logo_sprite.png) repeat-x scroll 0 -95px transparent; padding:0px 0px 0px 1px; width:auto}

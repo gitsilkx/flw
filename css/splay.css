@@ -1,0 +1,288 @@
+/* CSS Document */
+
+.Content a.btn-violet{
+	color: #ffffff;
+}
+.Content a.btn-pink{
+	color: #ffffff;
+}
+.btn-violet {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  padding:5px 8px;
+  font-size:12px;
+  width: auto;
+  height:auto; 
+  color: #ffffff; 
+  background-color: #9B76AC; 
+  border-color: #BD8FD2; 
+} 
+ 
+.btn-violet:hover, 
+.btn-violet:focus, 
+.btn-violet:active, 
+.btn-violet.active, 
+.open .dropdown-toggle.btn-violet { 
+  color: #ffffff; 
+  background-color: #D9C3F5; 
+  border-color: #BD8FD2; 
+} 
+ 
+.btn-violet:active, 
+.btn-violet.active, 
+.open .dropdown-toggle.btn-violet { 
+  background-image: none; 
+} 
+ 
+.btn-violet.disabled, 
+.btn-violet[disabled], 
+fieldset[disabled] .btn-violet, 
+.btn-violet.disabled:hover, 
+.btn-violet[disabled]:hover, 
+fieldset[disabled] .btn-violet:hover, 
+.btn-violet.disabled:focus, 
+.btn-violet[disabled]:focus, 
+fieldset[disabled] .btn-violet:focus, 
+.btn-violet.disabled:active, 
+.btn-violet[disabled]:active, 
+fieldset[disabled] .btn-violet:active, 
+.btn-violet.disabled.active, 
+.btn-violet[disabled].active, 
+fieldset[disabled] .btn-violet.active { 
+  background-color: #9B76AC; 
+  border-color: #BD8FD2; 
+} 
+ 
+.btn-violet .badge { 
+  color: #9B76AC; 
+  background-color: #ffffff; 
+}
+
+.btn-pink {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  padding:5px 8px;
+  font-size:12px;
+  width: auto;
+  height:auto; 
+  color: #ffffff; 
+  background-color: #c8375e; 
+  border-color: #c8375e; 
+} 
+ 
+.btn-pink:hover, 
+.btn-pink:focus, 
+.btn-pink:active, 
+.btn-pink.active, 
+.open .dropdown-toggle.btn-pink { 
+  color: #ffffff; 
+  background-color: #e96f87; 
+  border-color: #c8375e; 
+} 
+ 
+.btn-pink:active, 
+.btn-pink.active, 
+.open .dropdown-toggle.btn-pink { 
+  background-image: none; 
+} 
+ 
+.btn-pink.disabled, 
+.btn-pink[disabled], 
+fieldset[disabled] .btn-pink, 
+.btn-pink.disabled:hover, 
+.btn-pink[disabled]:hover, 
+fieldset[disabled] .btn-pink:hover, 
+.btn-pink.disabled:focus, 
+.btn-pink[disabled]:focus, 
+fieldset[disabled] .btn-pink:focus, 
+.btn-pink.disabled:active, 
+.btn-pink[disabled]:active, 
+fieldset[disabled] .btn-pink:active, 
+.btn-pink.disabled.active, 
+.btn-pink[disabled].active, 
+fieldset[disabled] .btn-pink.active { 
+  background-color: #e96f87; 
+  border-color: #c8375e; 
+} 
+ 
+.btn-pink .badge { 
+  color: #9B76AC; 
+  background-color: #ffffff; 
+}
+
+.pagination ul li a{
+	background:#f5b8c4;
+	border: 1px solid #f5b8c4;
+}
+.pagination li > a:hover{
+	background:#e16078;
+	border: 1px solid #e16078;
+	color:#FFF;
+}
+.pagination li a.active{
+	background:#e16078;
+}
+.h_contacts{
+	width:280px;
+	padding:15px 0 0 0;
+	margin-top:2px;
+}
+.h_sociallinks span {
+	margin-top:-54px;
+}
+.header-serch-container{
+	background-color: #f5b8c4;
+    display: block;
+    padding: 15px;
+}
+.header-serch-container .florist_log{
+	width:237px;
+	border:0px;
+}
+.header-serch-container  input[type="text"]{
+	height: 26px;
+    padding: 0 6px;
+}
+.header-search input[type="submit"]{
+	background-color:#c8375e; 
+    background-image:none !important; 
+    display:block;
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    font-weight: 400; 
+    color:#ffffff; 
+    line-height:3px !important; 
+    padding-left:10px !important; 
+    padding-right:10px !important;
+    padding-top:10px !important;
+    padding-bottom:10px !important;
+	float:none;
+	margin-bottom:0px;
+}
+.header-search input[type="submit"]:hover{
+	background-color:#e96f87; 
+    background-image:none !important;
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    font-weight: 400; 
+    color:#FFF;  
+    display:block;
+    line-height:3px !important;
+}
+/*.spl_btn  { 
+    background-color: #E97D94;
+    background-image: none !important;
+    color: #ffffff;
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height: 25px;
+    line-height: 3px !important;
+    margin-top: 10px;
+    padding: 0 10px 5px;
+    
+}*/
+.spl_btn{background-color: #E97D94;
+    background-image: none !important;
+    color: #ffffff;
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    height:28px;
+    line-height: -18px !important;
+    margin-top: 10px;
+    padding: 0 10px 0;}
+.spl_btn:hover  { 
+    background-color:#e96f87; 
+    /*background-image:none !important;
+    font-family: Lato,sans-serif;
+    font-size: 15px;
+    color:#FFF;  
+    display:block;
+    line-height:3px !important;  */
+}
+
+.logo_area_footer {
+    float: left;
+    width: 200px;
+    height: 250px; 
+    position:relative;
+    margin-top: -10px;
+    /*margin-left:810px;*/
+}
+.logo_area_footer ul{
+	padding:0;
+}
+.f_logo {
+    float: left;   
+    margin-top: -20px
+}
+.f_logo_name{
+    font-family: Arvo,serif;
+    font-size: 27px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: -1px;
+    color: #FFF;
+    margin-top: 40px;
+	float:left;
+}
+
+.f_social_icon{
+    width: 100%;
+    float: left;
+    position: relative;
+    top: 10px;
+    right:0px;
+}
+.f_social_icon ul{
+    width: 100%;
+	padding:0px;
+	margin:0px;
+}
+
+.select-search select{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    color: #555;
+    font-size: 13px;
+    padding: 0 0 0 5px;
+    float: left;
+    left:0;
+    background:url(../images/drop-icon.png) 98% center no-repeat #fddfe5;
+	 -webkit-appearance: none;
+		-moz-appearance: none;
+    appearance: none;
+}
+.select-search {
+    position: relative;
+    clear: both;
+    margin: 0 0 4px;
+    overflow: hidden;
+}
+
+.select-drop select{
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    height: 26px;
+    line-height: 26px;
+    color: #555;
+    font-size: 13px;
+    padding: 0 0 0 5px;
+    float: left;
+    left:0;
+    background:url(../images/drop-icon.png) 98% center no-repeat #d9c3f5;
+	 -webkit-appearance: none;
+		-moz-appearance: none;
+    appearance: none;
+}
+.select-drop {
+    position: relative;
+    clear: both;
+    margin: 0 0 4px;
+    overflow: hidden;
+}

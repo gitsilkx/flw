@@ -1,0 +1,238 @@
+<?php 
+if(isset($_POST['sub']) && $_POST['sub']!='')
+{
+	
+$ur = "../logo_upload/";
+$rest_cuisine=implode(",",$_POST['rest_cuisine']);
+$sql_insert="INSERT INTO ".$prev."resturant_info SET rest_info='".mysql_real_escape_string($_POST['rest_info'])."',
+rest_pickup='".mysql_real_escape_string($_POST['rest_pickup'])."',rest_booktable='".mysql_real_escape_string($_POST['rest_booktable'])."',rest_time='".mysql_real_escape_string($_POST['rest_time'])."',rest_order=".mysql_real_escape_string($_POST['rest_order']).",rest_tax=".mysql_real_escape_string($_POST['rest_tax']).",rest_cuisine='".$rest_cuisine."',rest_id=".$_SESSION['rest_id'];
+if($_REQUEST['rest_time']=='Open')
+{
+	$day=$_REQUEST['day'];
+	$restaurant_delivery_open_hr=$_REQUEST['restaurant_delivery_open_hr'];
+	$restaurant_delivery_close_min=$_REQUEST['restaurant_delivery_close_min'];
+	$restaurant_delivery_open_sess=$_REQUEST['restaurant_delivery_open_sess'];
+	$time=array();
+	for($i=0;$i<7;$i++)
+	{
+		$time[$i] = $restaurant_delivery_open_hr[$i]." : ".$restaurant_delivery_close_min[$i]." ".$restaurant_delivery_open_sess[$i];
+		if($day[$i]!='' && $time[$i]!='')
+		{
+			$sql_insert_time=mysql_query("INSERT INTO ".$prev."resturant_days SET rest_id='".$_SESSION['rest_id']."',action='".$_REQUEST['rest_time']."',day='".$day[$i]."',time='".$time[$i]."'");
+		}
+	}
+}
+//header('location:add_restaurant.php?menuid=104&menupid=103#tabs-2');
+$result=mysql_query($sql_insert);
+$rest_id=$_SESSION['rest_id'];
+if(is_uploaded_file($_FILES['rest_logo']['tmp_name']))
+   {
+    $image=explode('.',$_FILES["rest_logo"]["name"]);
+    $s=$ur.$rest_id.".".end($image);
+    //$pathToThumbs=$ur_thumb.$product_id.".".end($image);
+    if(move_uploaded_file($_FILES['rest_logo']['tmp_name'] , $s ))
+    {
+    // createThumbnail( $s, $pathToThumbs, 72 , 71 );
+     $image=$rest_id.".".end($image);
+     @mysql_query("UPDATE " . $prev . "resturant_info SET rest_logo='".$image."' WHERE rest_id=".$rest_id);
+     //unlink($s);
+    }
+   }
+if($result)
+				   {
+						    ?>
+                        <script>
+						$(function() {
+						//$( "#tabs" ).tabs();
+						//$("#tabs").tabs({disabled: [0,2,3,4]});
+						$("#tabs").tabs( "enable" , 1 ); 
+						$('#tabs').tabs({ active: 1 });
+						});
+						</script>
+                         <?php 
+					 }
+}
+?>
+<script>
+function selectAllOpeningTime()
+{
+	if(document.getElementById('selectopen').checked==true)
+	{
+		for(var k=0;k<7;k++)
+		{
+				document.getElementById('restaurant_delivery_open_hr'+k).disabled=false;
+				document.getElementById('restaurant_delivery_open_min'+k).disabled=false;
+				document.getElementById('restaurant_delivery_open_sess'+k).disabled=false;
+			
+		}
+	}
+	if(document.getElementById('selectopen').checked==false)
+	{
+		for(var k=0;k<7;k++)
+		{
+				document.getElementById('restaurant_delivery_open_hr'+k).disabled=true;
+				document.getElementById('restaurant_delivery_open_min'+k).disabled=true;
+				document.getElementById('restaurant_delivery_open_sess'+k).disabled=true;
+			
+		}
+	}
+}
+function selectAllCloseingTime()
+{
+	if(document.getElementById('selectclose').checked==true)
+	{
+		for(var k=0;k<7;k++)
+		{
+				document.getElementById('restaurant_delivery_close_hr'+k).disabled=false;
+				document.getElementById('restaurant_delivery_close_min'+k).disabled=false;
+				document.getElementById('restaurant_delivery_close_sess'+k).disabled=false;
+			
+		}
+	}
+	if(document.getElementById('selectclose').checked==false)
+	{
+		for(var k=0;k<7;k++)
+		{
+				document.getElementById('restaurant_delivery_close_hr'+k).disabled=true;
+				document.getElementById('restaurant_delivery_close_min'+k).disabled=true;
+				document.getElementById('restaurant_delivery_close_sess'+k).disabled=true;
+			
+		}
+	}
+}
+</script>
+	<form name="addNewRestaurantInfo" method="post" action=""  enctype="multipart/form-data">
+		
+<div class="restInnerTab">
+	<!--Restaurant Logo-->
+	<!--<div class="mandatoryField"><span class="color1">*</span> - Mandatory Fields</div>-->
+	<div class="addPageCont">
+			<label class="addPageRightFont">Restaurant Logo </label>
+			<span class="colon1">:</span>
+			<div class="logoUpload">
+				<!--<div class="logo">
+					<input type="file" name="restaurant_logo" id="restaurant_logo" size="30" />
+										<span class="errClass" id="resLogoErr"></span>
+				</div>-->
+				<!--<div class="logo" style="width:250px;">-->
+					<input class="fileUpload" type="file" name="rest_logo" id="rest_logo" size="25" />
+				<!--</div>-->
+			</div>
+			<div class="tooltip"><div class="HelpButton">?</div><span>Upload restaurant logo</span></div>
+			<div class="errClass" id="resLogoErr"></div>
+				</div>	
+	<!--About Restaurant-->
+	<div class="addPageCont">
+		<span class="addPageRightFont">About Restaurant </span>
+		<span class="colon1">:</span>
+		<textarea class="addPageTxtArea" name="rest_info" id="rest_info" /></textarea>
+		<div class="tooltip"><div class="HelpButton">?</div><span>Enter details about restaurant</span></div>
+		<span class="errClass" id="resAbtResErr"></span>
+	</div>
+	<!--Restaurant Estimated Time-->
+	<!--<div class="addPageCont">
+		<span class="addPageRightFont">Restaurant delivery estimated time <span class="color1">*</span></span>
+		<span class="colon1">:</span>
+		<input class="textbox" type="text" name="restaurant_estimated_time" id="restaurant_estimated_time" value="" />
+		<div class="tooltip"><div class="HelpButton">?</div><span>Enter restaurant delivery estimated time</span></div>
+		<span class="errClass" id="resEstTimeErr"></span>
+	</div>-->
+	<!--Restaurant Delivery-->
+	<!--<div class="addPageCont">
+		<span class="addPageRightFont">Delivery <span class="color1">*</span></span>
+		<span class="colon1">:</span>
+		<span class="radioBtn">
+		<span class="labelcont"><input class="radiobotton" type="radio" name="restaurant_delivery" id="restaurant_delivery_yes" value="Yes" checked="checked" /><label class="labelfont" for="yes">&nbsp;Yes</label> </span>	
+		<span class="labelcont"><input class="radiobotton" type="radio" name="restaurant_delivery" id="restaurant_delivery_no" value="No"  /><label class="labelfont" for="no">&nbsp;No</label></span>
+		</span>
+		<div class="tooltip"><div class="HelpButton">?</div><span>Select any one restaurant dlivery option</span></div>
+	</div>-->
+	
+	<!--Restaurant Pickup-->
+	<div class="addPageCont">
+		<span class="addPageRightFont">Pickup </span>
+		<span class="colon1">:</span>
+		<span class="radioBtn">
+		<span class="labelcont"><input class="radiobotton" type="radio" name="rest_pickup" id="restaurant_pickup_yes" value="Yes"  /><label class="labelfont" for="yes">&nbsp;Yes</label> </span>	
+		<span class="labelcont"><input class="radiobotton" type="radio" name="rest_pickup" id="restaurant_pickup_no" value="No"  /><label class="labelfont" for="no">&nbsp;No</label></span>
+		</span>
+		<div class="tooltip"><div class="HelpButton">?</div><span>Select any one restaurant pickup option</span></div>
+	</div>
+	
+	<!--Restaurant Book Table-->
+	<div class="addPageCont">
+		<span class="addPageRightFont">Book Table </span>
+		<span class="colon1">:</span>
+		<span class="radioBtn">
+		<span class="labelcont"><input class="radiobotton" type="radio" name="rest_booktable" id="restaurant_booktable_yes" value="Yes"  /><label class="labelfont" for="yes">&nbsp;Yes</label> </span>	
+		<span class="labelcont"><input class="radiobotton" type="radio" name="rest_booktable" id="restaurant_booktable_no" value="No"  /><label class="labelfont" for="no">&nbsp;No</label></span>
+		</span>
+		<div class="tooltip"><div class="HelpButton">?</div><span>Select any one restaurant book table option</span></div>
+	</div>
+	
+	<!--Restaurant Delivery Hrs-->
+	<div class="addPageCont">
+		<span class="addPageRightFont">Opening &amp; Closing Time </span>
+		<span class="colon1">:</span>
+		<!-- <input class="textbox" type="text" name="restaurant_delivery_hrs" id="restaurant_delivery_hrs" value="" />-->
+		<span class="DeliveryHrs">Opening Time<span class="DeliverHrs_Font"><input type="checkbox" name="rest_time" id="selectopen" onclick="selectAllOpeningTime();" value="Open"/></span><span class="DeliverHrs_Font">Select All</span><span id="resSelectAllOpenErr"></span></span>
+		<span class="DeliveryHrs">Closing Time<span class="DeliverHrs_Font"><input type="checkbox" id="selectclose" name="rest_time" onclick="selectAllCloseingTime();" value="Close"/></span><span class="DeliverHrs_Font">Select All</span><span id="resSelectAllCloseErr"></span></span>
+	</div>
+	
+	<div class="addPageCont">
+		<span class="addPageRightFont">&nbsp;</span>
+		<span class="colon1">&nbsp;</span>
+		<span class="DeliverHrs_Font"><b>Note</b> : Your Restaurant is closed in particular day , Please select time <b> 00:00 </b></span>
+	</div>
+	
+	<div class="addPageCont">
+		<div class="addPageRightFontNew1">
+        <?php
+		$arr_days=array('Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday');
+		for($i=0;$i<count($arr_days);$i++)
+		{
+		?>
+        <div class="addPageCont"><span class="addPageRightFont"><?php echo $arr_days[$i]; ?>
+        <input type="hidden" name="day[]" value="<?php echo $arr_days[$i]; ?>" /></span><span class="colon1">:</span></div>
+        <?php } ?>
+			<!--<div class="addPageCont"><span class="addPageRightFont">Monday </span><span class="colon1">:</span></div>
+			<div class="addPageCont"><span class="addPageRightFont">Tuesday </span><span class="colon1">:</span></div>
+			<div class="addPageCont"><span class="addPageRightFont">Wednesday </span><span class="colon1">:</span></div>
+			<div class="addPageCont"><span class="addPageRightFont">Thursday </span><span class="colon1">:</span></div>
+			<div class="addPageCont"><span class="addPageRightFont">Friday </span><span class="colon1">:</span></div>
+			<div class="addPageCont"><span class="addPageRightFont">Saturday </span><span class="colon1">:</span></div>
+			<div class="addPageCont"><span class="addPageRightFont">Sunday </span><span class="colon1">:</span></div>-->
+		</div>
+		<div class="DeliveryHrsNew">
+        <?php 
+		for($k=0;$k<count($arr_days);$k++)
+		{ 
+		?>
+			<span class="DeliveryHrs">
+			<select class="selectbx" name="restaurant_delivery_open_hr[]" id="restaurant_delivery_open_hr<?php echo $k;?>" style="width:60px; margin-right:15px;" disabled="disabled">
+            <option value="">Hrs</option>
+            <?php for($hr=0;$hr<=12;$hr++){ if($hr<=9){$hr="0".$hr;}else{$hr=$hr;}?>
+            <option value="<?php echo $hr; ?>"><?php echo $hr; ?></option>
+            <?php } ?>
+            </select>
+            <select class="selectbx" name="restaurant_delivery_open_min[]" id="restaurant_delivery_open_min<?php echo $k;?>" style="width:60px; margin-right:15px;" disabled="disabled">
+            <option value="">Mins</option>
+            <?php for($min=0;$min<=59;$min++){ if($min<=9){$min="0".$min;}else{$min=$min;}?>
+            <option value="<?php echo $min; ?>"><?php echo $min; ?></option>
+            <?php } ?>
+            </select>
+            <select class="selectbx" name="restaurant_delivery_open_sess[]" id="restaurant_delivery_open_sess<?php echo $k;?>" style="width:120px" disabled="disabled">	
+            <option value="">--AM/PM--</option>
+            <option value="AM" >AM</option> <!--Testing Validation-->
+			<option value="PM" >PM</option>
+            </select>
+		</span>
+            
+	<?php } ?>
+		</div>
+		<div class="DeliveryHrsNew">
+			 <?php 
+		for($l=0;$l<count($arr_days);$l++)
+		{ 
+		?>
+        <spa                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     

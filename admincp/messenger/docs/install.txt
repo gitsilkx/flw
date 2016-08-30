@@ -1,0 +1,90 @@
+
+ListMessenger Pro Installation
+Version:	2.1.0
+Website:	http://www.listmessenger.com
+Support:	http://forum.listmessenger.com
+Author:		Matt Simpson <msimpson@listmessenger.com>
+Tab Stop:	4 spaces
+================================================================================
+
+STEP 1)
+	Unpack ListMessenger Pro 2.1.0 with any upzip / untar program. The
+	extracted directory will be named "listmessenger-pro-2.x.x" or something
+	to that effect; it would be a good idea to rename this extracted directory
+	to "listmessenger", "mailinglist" or something similar.
+
+STEP 2)
+	Modify the contents of ./includes/config.inc.php to reflect the correct
+	database and database login information for your MySQL Server.
+
+	<IMPORTANT NOTICE>
+	While the ListMessenger setup program will create the database tables that
+	ListMessenger needs to run, it will not create the actual database for you,
+	please create it yourself before running the setup program using a database
+	management tool such as PHPMyAdmin or through your hosting control panel if
+	you have one, such as Plesk, Ensim, cPanel, etc.
+	</IMPORTANT NOTICE>
+
+STEP 3)
+	Upload the entire ListMessenger directory tree (all folders and files)
+	to a web-server which meets the following system requirements:
+	-> PHP 4.1.2+ (4.3+ highly recommended)
+		\_ PHP's short tags must be available.
+		\_ PHP 4.3+ is required for importing and exporting.
+		\_ pSpell is required for spell checking support.
+		\_ ListMessenger uses many of PHP's built in functions which cannot
+		   be disabled, such as: file_exists, fopen, fread, fwrite, ini_set
+		   ini_get, fsockopen, ob_start, session_start.
+	-> MySQL 3.23.23+ (more databases on the way)
+
+	Also upload your ListMessenger Pro 2.1.0 Licence Key file (key.php) to the
+	listmessenger application directory root.
+
+	<REMINDER>
+	You will require your Authorisation Code that you received in the welcome
+	key e-mail when you purchased ListMessenger Pro during the installation.
+
+	ListMessenger Pro is licenced on a per-domain basis.
+	</REMINDER>
+
+STEP 4)
+	The folling directories, which by default reside within the ListMessenger
+	program directory need to be writable by the user that your web-server
+	and / or PHP runs as. This can generally be done through your FTP client
+	such as Filezilla, Transmit, CuteFTP, and setting the permissions to 777.
+
+	- public/files
+	- public/images
+	- private/backups
+	- private/logs
+	- private/tmp
+
+	Unix / Linux Web-Servers:
+	Please chmod the those directories to 777 using either your FTP client
+	or by command line by entering "chmod 777 directoryname".
+
+	Windows Web-Servers:
+	I believe that on most Windows servers directories are already writable
+	by the user in which your web-server runs; however, if they are not then
+	you should be able to set this information by right clicking on the
+	directories and allowing everyone to read / write data to them.
+
+STEP 5)
+	Point your web browser to the ListMessenger setup program located in
+	the ListMessenger program directory and follow the on-screen instructions.
+
+	Example: http://www.domain.com/listmessenger/setup.php
+
+STEP 6)
+	After the installation has been completed, make sure you delete the
+	setup.php file AND setup directory from the ListMessenger directory root.
+
+SUMMARY)
+If you require installation assistance, it is available to you 24/7 using our
+public forum which can be accessed at http://forum.listmessenger.com
+
+Free installation can be provided for first time setups, please contact us
+directly at sales@listmessenger.com for further information. If you would
+like us to upgrade your existing installation or move ListMessenger from
+one server to another server because you've changed hosting providers, we can
+also provide this as an added service for a nominal fee.

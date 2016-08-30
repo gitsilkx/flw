@@ -1,0 +1,74 @@
+#l3_navWrapper {
+    margin-top:0px;
+}
+
+#l3_nav ul.level2 a, #l3_nav ul.level2 li, #l3_nav ul.level2 {
+    font-size:12px;
+    line-height:16.8px;
+}
+
+#l3_nav .linkGroup {
+    margin-bottom:20px;
+}
+
+#l3_nav .linkGroup.level2 {
+    margin-bottom:12px;
+}
+
+#l3_nav .linkGroup a {
+    color:#999;
+    font-size:12px;
+}
+
+#l3_nav .linkGroup a {
+    color: #999999;
+}
+
+#l3_nav p {
+    font-size:11px;
+    margin-top:8px;
+}
+
+#l3_nav ul.socialIcons strong {
+    color:#666;
+    font-size:12px;
+}
+
+#secondl3_nav {
+    margin:12px 0px;
+}
+
+#l3_nav ul
+{
+    margin: 1em 1em 0 0;
+}
+
+#l3_nav .linkGroup:hover a {color:#0033FF;}
+
+#l3_nav .linkGroup a:hover {
+    color: #0033FF;
+}
+
+#l3_nav .narrowCol {
+    width:92px;
+    color:#666666;
+}
+
+#browse_contractors ul.providersearch .linkGroup,
+#browse_jobs ul.jobsearch .linkGroup
+{
+    display: block;
+    margin-bottom: 0;
+}
+
+/*oClassSwap css*/
+.faxu-hidden {
+  overflow:hidden; height:1px
+}
+.faux-show {
+  overflow:visible;height:auto
+}
+
+.gray {
+    color: #666;
+}

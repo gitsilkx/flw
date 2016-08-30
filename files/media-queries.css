@@ -1,0 +1,337 @@
+@media only screen and (orientation:landscape) {
+body {
+	-webkit-text-size-adjust: none;
+}
+}
+@media only screen and (orientation:portrait) {
+body {
+	-webkit-text-size-adjust: none;
+}
+}
+ @media only screen and (min-width: 768px) and (max-width:1023px) {
+.innerWrap {
+	width: 98%;
+	margin: 0px auto;
+}
+ul.navigation {
+	display: none;
+	width: 100%;
+	margin: 0 auto 20px;
+	height: auto;
+	clear: both;
+}
+ul.navigation li {
+	float: none;
+	background: url(images/divider.jpg) no-repeat 100% 50%;
+	padding: 0;
+	font-size: 17px;
+	font-weight: 400;
+	font-size: 13px;
+	display: block;
+}
+ul.navigation li a {
+	color: #FFF;
+	display: block;
+	float: left;
+	font-family: Lato, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 17px;
+	margin: 0px;
+	height: 24px;
+	padding: 8px 16px 0px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	word-wrap: break-word;
+}
+.menuDrop {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+.h_contacts {
+	display: none;
+}
+.h_oderSec {
+	width: 235px;
+}
+.mobMenu {
+	background: #e16078;
+	height: 40px;
+	position: relative;
+	border-bottom: 2px solid #fff;
+}
+.mobMenu h4 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	float: left;
+	padding: 8px 0 0 13px;
+	display: block;
+}
+.row-fluid {
+	margin: 20px 0 0 0;
+}
+ul.featuredAdd li {
+	width: 495px!important;
+	margin: 0px 12px 15px;
+}
+ul.featuredAdd li a .btn_box {
+	right: -118px;
+}
+table.FeaturedProducts td {
+	padding: 0px 28px 20px;
+}
+table.FeaturedProducts td.noBrd {
+	border: none!important;
+}
+.featureTextPan {
+	width: 100%;
+	margin: 0 auto;
+}
+}
+ @media only screen and (min-width: 640px) and (max-width:767px) {
+.innerWrap {
+	width: 98%;
+	margin: 0px auto;
+}
+ul.navigation {
+	display: none;
+	width: 100%;
+	margin: 0 auto 20px;
+	height: auto;
+	clear: both;
+}
+ul.navigation li {
+	float: none;
+	background: url(images/divider.jpg) no-repeat 100% 50%;
+	padding: 0;
+	font-size: 17px;
+	font-weight: 400;
+	font-size: 13px;
+	display: block;
+}
+ul.navigation li a {
+	color: #FFF;
+	display: block;
+	float: left;
+	font-family: Lato, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 17px;
+	margin: 0px;
+	height: 24px;
+	padding: 8px 16px 0px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	word-wrap: break-word;
+}
+.menuDrop {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+.h_contacts {
+	display: none;
+}
+.h_oderSec {
+	width: 235px;
+}
+.mobMenu {
+	background: #e16078;
+	height: 40px;
+	position: relative;
+	border-bottom: 2px solid #fff;
+}
+.mobMenu h4 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	float: left;
+	padding: 8px 0 0 13px;
+	display: block;
+}
+.row-fluid {
+	margin: 20px 0 0 0;
+}
+ul.featuredAdd li {
+	width: 495px!important;
+	margin: 0px 12px 15px;
+}
+ul.featuredAdd li a .btn_box {
+	right: -118px;
+}
+table.FeaturedProducts td {
+	padding: 0px 0 20px;
+}
+table.FeaturedProducts td.noBrd {
+	border: none!important;
+}
+.featureTextPan {
+	width: 98%;
+	padding: 0 10px!important;
+}
+.h_social_icon {
+	display: none;
+}
+.logo_area {
+	width: 350px;
+}
+.h_oderSec {
+	width: 235px;
+	margin: 20px 0 0 20px;
+}
+table.FeaturedProducts td.noBrd {
+	border: none!important;
+}
+}
+ @media only screen and (min-width: 200px) and (max-width:639px) {
+.innerWrap {
+	width: 98%;
+	margin: 0px auto;
+}
+ul.navigation {
+	display: none;
+	width: 100%;
+	margin: 0 auto 20px;
+	height: auto;
+	clear: both;
+}
+ul.navigation li {
+	float: none;
+	background: url(images/divider.jpg) no-repeat 100% 50%;
+	padding: 0;
+	font-size: 17px;
+	font-weight: 400;
+	font-size: 13px;
+	display: block;
+}
+ul.navigation li a {
+	color: #FFF;
+	display: block;
+	float: left;
+	font-family: Lato, sans-serif;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 17px;
+	margin: 0px;
+	height: 24px;
+	padding: 8px 16px 0px;
+	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	word-wrap: break-word;
+}
+.menuDrop {
+	display: block;
+	position: absolute;
+	right: 10px;
+	top: 8px;
+}
+.h_oderSec {
+	display: none;
+}
+.h_contacts {
+	display: none;
+}
+.mobMenu {
+	background: #e16078;
+	height: 40px;
+	position: relative;
+	border-bottom: 2px solid #fff;
+}
+.mobMenu h4 {
+	font-size: 18px;
+	color: #fff;
+	font-weight: 600;
+	float: left;
+	padding: 8px 0 0 13px;
+	display: block;
+}
+.row-fluid {
+	margin: 20px 0 0 0;
+}
+#aside {
+	float: left;
+	margin: 0px 20px 20px 0px;
+	width: 100%;
+}
+ul.featuredAdd li {
+	width: 100%;
+	margin: 0px 0 15px;
+}
+ul.featuredAdd li a .btn_box {
+	right: -105px;
+}
+table.FeaturedProducts td.noBrd {
+	border: none!important;
+}
+.featureTextPan {
+	width: 98%;
+	padding: 0 10px!important;
+}
+ul.featuredAdd li .title {
+	display: block;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 28px;
+}
+ul.featuredAdd li .featured_content {
+	width: 166px;
+	font-size: 12px;
+}
+.h_social_icon {
+	display: none;
+}
+.logo_area {
+	width: 310px;
+}
+a.h_logo {
+	width: 310px;
+}
+a.h_logo:hover span.h_logo_name, a.h_logo:hover span.h_logo_tagline {
+	display: block;
+}
+a.h_logo span.h_logo_name {
+    font-family: Arvo,serif;
+    font-size: 23px;
+    font-weight: 700;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: -1px;
+    color: #6D696A;
+    top: -147px;
+    position: relative;
+    right: -150px;
+}
+table.FeaturedProducts td {
+    padding: 0px 4% 20px;
+    text-align: center;
+    float: left;
+}
+.Content p{
+	font-size:14px;
+}
+}
+@media only screen and (max-width:360px) {
+	table.FeaturedProducts td {
+    padding: 0px 24% 20px;
+    text-align: center;
+    float: left;
+}
+}
+@media only screen and (min-width: 200px) and (max-width:320px) {
+	table.FeaturedProducts td {
+    padding: 0px 21% 20px;
+    text-align: center;
+    float: left;
+}
+}

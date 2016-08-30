@@ -1,0 +1,21 @@
+[version]2.0.1[/version][features]ListMessenger Pro 2.0.1 is a complete rewrite of ListMessenger 1.0 codebase.
+ListMessenger Pro 2.0.1 is a maintenance release of ListMessenger Pro 2.0.0.
+Administrator defined custom fields.
+E-Mail file attachment and file management.
+Subscriber importing and exporting system (Microsoft Excel or CSV).
+Unlimited group and sub-group levels.
+Select and send to multiple groups at once.
+Duplicate e-mail removal when sending messages.
+New subscriber and unsubscribe notifications to the administrator.
+Pick your favourite WYSIWYG HTML Editor (InnovaStudio / HTMLArea / None).
+Message archive system has been streamlined.
+Upgraded sending process without utilizing a pop-up window.
+Enhanced backup and restore system.
+Complete rewrite of the end-user tools with new features.
+Dutch, English, German and Spanish end-user language files.
+Ability to move public and private folders out of ListMessenger directory.
+Detailed error logging for information you might not otherwise know.
+Upgrade from all previous releases of ListMessenger.
+Fantastic User Guide (Manual) by Erik Geurts.
+Support for Mozilla / Firefox / Netscape, Safari and Internet Explorer.
+This upgrade is free for anyone who has purchased ListMessenger Pro![/features][update_info]Update your version of ListMessenger Pro today and enjoy the new features, fixes and more. You can download the newest version free of charge from our website: <a>http://www.listmessenger.com</a> and log into the ListMessenger Members Area.[/update_info]

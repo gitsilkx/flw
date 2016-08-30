@@ -1,0 +1,104 @@
+body {background:transparent url(/assets/bg_bar.png) repeat-x scroll left top !important; margin:0 !important; padding:0}
+#bgBar {position:absolute; height:40px; width:100%; left:0; background-color:#DAD8CB}
+#nav_v3 .menuitem ul, #nav_v3 .menuitem li {list-style-image:none; list-style-position:outside; list-style-type:none; margin:0; padding:0}
+#nav_v3 .menuitem .menu {display: none; background-color:#fff; border-color:#ccc #666 #666 #ccc; border-style:solid; border-width:1px; cursor:pointer; display:none; left: 0; top:22px; position:absolute; text-align:left; z-index:1001; margin:0}
+.ie6 #nav_v3 .menuitem .menu {top:30px}
+#nav_v3 .menuitem .menu .menuitem {border-bottom:1px dotted #ccc; display:block; padding:0 6px !important; white-space:nowrap; margin:0 !important; z-index:999}
+#nav_v3 .menuitem .menu .menuitem a {color:#03f !important; text-decoration:none !important; font-size:12px; font-weight:bold !important}
+#nav_v3 .menuitem .menu .menuitem a:hover {color:#000 !important; text-decoration:underline !important}
+#nav_v3 .menuitem > .menu > .menuitem > a {display:block; padding:4px 8px !important}
+#nav_v3 .menuitem-menu-menuitem-a {display:block; padding:4px 0 !important}
+.ie7 #nav_v3 .menuitem > .menu > .menuitem > a {padding:4px 0 !important}
+#nav_v3 #logline .menu, #nav_v3 #comm_help .menu {top:12px}
+.ie6 #nav_v3 #comm_help .menu {top:30px}
+.ie7 #nav_v3 #comm_help .menu {top:25px}
+body #nav_v3 {font-family:Tahoma,sans-serif; font-size:14px; margin:0 auto; position:relative; white-space:nowrap; z-index:500}
+body #nav_v3 #logline strong {font-family:Tahoma,sans-serif; font-size:12px}
+#logline, #lev1 {z-index:1000}
+#lev2, #comm_help {z-index:900}
+#comm_help .menuitem {z-index:900}
+#comm_help #search {z-index:899}
+.ie7 #comm_help .menu {top: 30px}
+.www-content #nav_v3 {width: 970px; font-size: 13px; font-family: Tahoma,sans-serif}
+#nav_v3 #lev1 {background-color:#dad8cb; height:40px; margin:0; padding:0; position:relative}
+#nav_v3 a {color:#345B9E; font-weight:bold; text-decoration:none}
+#nav_v3 a:hover {text-decoration:underline}
+#nav_v3 li {display:inline; position:relative}
+#nav_v3 #lev1 li.nav-lev1-menuitem {background-color:#fff; margin-right:2px; padding:6px 12px; position:relative; top:12px}
+#nav_v3 #lev1 > li.menuitem {background:#fff url(/assets/bg_off.png) repeat-x scroll left bottom; margin-right:2px; padding:6px 12px; position:relative; top:12px}
+#nav_v3 #lev1 li.nav-group-begin {-moz-border-radius-topleft:3px; -webkit-border-top-left-radius:3px}
+#nav_v3 #lev1 li.nav-group-end {-moz-border-radius-topright:3px; -webkit-border-top-right-radius:3px}
+#nav_v3 #lev1 li.nav-last {margin-right:20px}
+#nav_v3 #lev1 li.nav-current {background-image:none; padding:9px 12px 10px; top:12px}
+#nav_v3 #lev1 .menu li.nav-current {top:0px}
+#nav_v3 #lev1 li.nav-current a {color:#000; /*position:relative; top:-1px;*/ }
+#nav_v3 #lev1 li#globalnav-overview-link {padding:6px 8px}
+#nav_v3 #lev1 li#globalnav-overview-link.nav-current {padding: 9px 12px 10px }
+.ie6 #nav_v3 #lev1 li#globalnav-overview-link {padding:2px 8px 9px}
+.ie6 #nav_v3 #lev1 li#globalnav-overview-link.nav-current {top:14px; padding:10px 12px}
+.ie7 #nav_v3 #lev1 li#globalnav-overview-link {padding:5px 8px 6px; top:14px}
+.ie7 #nav_v3 #lev1 li#globalnav-overview-link.nav-current {padding:8px 12px 10px}
+#nav_v3 #lev1 li#globalnav-overview-link img {display:inline; position:relative; top:3px}
+.ie7 #nav_v3 #lev1 li#globalnav-overview-link img, .ie6 #nav_v3 #lev1 li#globalnav-overview-link img {top:0}
+.ie8 #nav_v3 #lev1 li#globalnav-overview-link.nav-current img {position:static}
+.ie8 #nav_v3 #lev1 li#globalnav-overview-link.nav-current a {top:2px}
+#nav_v3 #logline {font-size:12px; position:absolute; right:0; top:0; margin:1em}
+#nav_v3 #logline > li {margin-left:8px}
+#nav_v3 #logline a {font-weight:normal}
+#nav_v3 #logline strong a {font-weight:bold}
+#nav_v3 #logline.anon a {color:#03f; text-decoration:underline}
+.small, .small a {font-size:11px; font-weight:normal !important}
+.badge {-moz-border-radius:20px; -webkit-border-radius:5px; background-color:red; border:2px solid #fff; color:#fff; font-size:10px; padding:0 6px}
+#mc_unread_link .badge {display: none}
+#nav_v3 #lev2 {margin: 1em 0 0; padding:0 0 1em; border-bottom: 1px solid #DAD8CB}
+#nav_v3 #lev2 li {font-size:12px; padding:3px 8px}
+#nav_v3 #lev2 li.nav-current {-moz-border-radius:3px; -webkit-border-radius:3px; background-color:#345B9E}
+#nav_v3 #lev2 li.nav-current a {color:#fff}
+#nav_v3 #comm_help {font-size:12px; position:absolute; right:0; top:40px; margin: 1em 0}
+#nav_v3 #community-menu {z-index:901}
+.ie6 #nav_v3 #comm_help {margin-top:.3em}
+.ie7 #nav_v3 #comm_help {margin-top:.5em}
+#nav_v3 .new_feature a{ background-image: url(/assets/new.png) !important; background-position: center right !important; background-repeat: no-repeat !important}
+#nav_v3 .new_feature a{ _padding-right: 18px !important}
+#lev2 .new_feature a{ padding-right: 18px !important}
+#comm_help input, #comm_help select {font-size:13px}
+#searchText {padding:2px; font-family:Tahoma,sans-serif}
+#go_btn {padding:0 3px}
+#nav_v3 #comm_help li {margin-left:8px}
+#search {padding:8px 6px; position:relative}
+.ie7 #search {padding:4px 6px; top:3px}
+#search #searchText {color:#666; font-style:italic}
+#l3_nav {margin: 0px auto; border: none; color: #ccc}
+#l3_nav li {margin-right: 0px; display:inline}
+#l3_nav p {clear: both; margin-top: 8px; float: left; font-size: 11px; color:#666}
+#l3_nav p a {font-size: 11px; text-decoration:underline}
+div#l3_nav_bbb {margin-top: 6.2em; float:right; font-size:10px; white-space:normal}
+div#l3_nav_bbb, div#l3_nav_bbb img {width:53px}
+#l3_nav_wrapper {width: 100%; border-top: 1px solid #dcdace; padding-bottom: 40px; margin-top:100px}
+#l3_navright {float: right; width: 100px; margin-top:2em}
+#l3_navright ul{ margin-top:0 !important}
+.linux.gecko #l3_navright {width: 80px}
+.linux.gecko #l3_navright ul{ margin-right: 0px}
+#l3_nav {line-height: 1.4em}
+#l3_nav strong a {text-decoration: none; color: #666}
+#l3_nav strong a:hover {text-decoration: underline}
+#l3_nav ul {list-style-type:none; margin-left:0; padding:0; background:none repeat scroll 0 0 transparent}
+#l3_nav li a {color: #999; text-decoration: none; white-space:nowrap}
+#l3_navleft {width: 800px; float: left}
+#l3_nav {margin-bottom: 20px}
+#mainl3_nav, #mainl3_nav a {font-size: 14px; font-weight: bold}
+#mainl3_nav{ margin-top: 2em !important}
+#mainl3_nav li a {color: #666}
+#l3_nav li a:hover, #l3_nav .link_group:hover li a , .link_group:hover #mainl3_nav li a, #l3_nav .link_group:hover strong a {color: #03f}
+#providersearch {margin-bottom: 12px}
+#socialicons {overflow: hidden; margin:0}
+#socialicons li {display: block; float: left; margin: 4px 3px 0 0}
+#socialicons li a {display: block; background:url(/images/logo_sprite.png) no-repeat scroll 0 0 transparent; width: 21px; height: 21px}
+#socialicons li a#twitter {background-position:-1px -42px}
+#socialicons strong {color: #666; display: block; font-weight: bold}
+#socialicons.link_group:hover li a#twitter {background-position:-1px -70px}
+#socialicons li a#facebook {background-position:-28px -42px}
+#socialicons.link_group:hover li a#facebook {background-position:-28px -70px}
+#socialicons li a#linkedin {background-position:-53px -42px}
+#socialicons.link_group:hover li a#linkedin {background-position:-53px -70px}
+.placeholder {color: #666; font-style: italic}

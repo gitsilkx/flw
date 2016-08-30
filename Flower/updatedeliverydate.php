@@ -1,0 +1,1 @@
+<? include("configs/path.php"); $a = mysql_query("update " . $prev . "cart set delivery_date='" .$_POST[deliverydate] . "' where id='".$_POST[cart_id]."'");if($a){echo 1;}else{echo 0;}?>					

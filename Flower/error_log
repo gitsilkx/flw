@@ -1,0 +1,15 @@
+[23-Apr-2016 02:28:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/onlyvzxy/public_html/flowerwyz.com/Flower/cart.php:2) in /home/onlyvzxy/public_html/flowerwyz.com/Flower/myconfig/config.php on line 7
+[23-Apr-2016 02:29:08 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/onlyvzxy/public_html/flowerwyz.com/Flower/cart.php:2) in /home/onlyvzxy/public_html/flowerwyz.com/Flower/myconfig/config.php on line 7
+[23-Apr-2016 02:35:10 America/New_York] PHP Warning:  Cannot modify header information - headers already sent by (output started at /home/onlyvzxy/public_html/flowerwyz.com/Flower/cart.php:4) in /home/onlyvzxy/public_html/flowerwyz.com/Flower/myconfig/config.php on line 7
+[27-Apr-2016 09:36:34 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 01:55:37 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 02:26:14 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 02:32:16 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 02:37:57 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 02:39:17 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 02:53:59 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[28-Apr-2016 02:55:25 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[30-Apr-2016 06:17:43 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/addupdatecart.php on line 1
+[11-May-2016 04:15:03 America/New_York] PHP Warning:  file_get_contents(): Couldn't resolve host name in /home/onlyvzxy/public_html/flowerwyz.com/Flower/include/header.php on line 7
+[11-May-2016 04:15:03 America/New_York] PHP Warning:  file_get_contents(http://www.geoplugin.net/php.gp?ip=51.255.65.41): failed to open stream: operation failed in /home/onlyvzxy/public_html/flowerwyz.com/Flower/include/header.php on line 7
+[30-Jun-2016 06:07:28 America/New_York] PHP Parse error:  syntax error, unexpected end of file in /home/onlyvzxy/public_html/flowerwyz.com/Flower/notify.php on line 641

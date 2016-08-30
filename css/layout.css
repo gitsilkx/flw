@@ -1,0 +1,287 @@
+/* CSS Document */
+body {
+	background: #f5b8c4;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.page-container {
+	padding: 20px 50px;
+	background: #ffeaeb;
+	max-width: 900px;
+}
+/*.panel-body {
+    padding:10px 15px;
+}*/
+.table thead > tr > th, .table tbody > tr > th, .table tfoot > tr > th, .table thead > tr > td, .table tbody > tr > td, .table tfoot > tr > td {
+	padding: 6px;
+}
+.page-heading {
+	background: #aa1232 none repeat scroll 0 0;
+	color: #fff;
+	font-size: 28px;
+	font-weight: 400;
+	padding: 23px;
+	text-align: center;
+	border-radius: 6px;
+	margin: 0px;
+}
+.security {
+	margin-top: 0px;
+	color: #6f889b;
+	font-size: 10px;
+}
+.security a {
+	color: #6f889b;
+}
+.security, .global-options, .questions {
+	width: 100%;
+}
+.security img {
+	max-width: 100%;
+}
+.global-options select {
+	width: 100%;
+}
+.summary {
+	padding: 0px;
+	margin: 0px;
+	width: 100%;
+}
+.summary .summary-total {
+	width: 100%;
+	background: #aa1232;
+	margin: 0px;
+}
+.summary-table {
+	width: 100%;
+	margin-bottom: 15px;
+}
+.summary h3 {
+	margin: 10px 0 18px 0;
+}
+.questions {
+}
+.panel {
+	border-radius: 6px;
+	border: none;
+}
+.panel-default {
+	border: none;
+}
+.checkout-panel h3 {
+	margin-top: 0px;
+	margin-bottom: 8px;
+	color: #776e6f;
+}
+.accord-container .panel-heading {
+	border-radius: 0px;
+	background: #ffeaeb;
+	color: #aa1232;
+	height: 36px;
+	line-height: 36px;
+	margin-bottom: 1px;
+	font-size: 15px;
+}
+.label {
+	padding: 3px 8px;
+	font-size: 12px;
+	margin-right: 10px;
+	border-radius: 0px;
+	border: none;
+}
+.label-green {
+	padding: 3px 3.5px;
+	margin-right: 10px;
+	border-radius: 0px;
+	border: none;
+	background-color: #1DAE20;
+	color: #FFF;
+	margin-top: 4px;
+}
+.label-dark {
+	background-color: #aa1232;
+	color: #FFF;
+}
+.accord-container .selected {
+	background: #aa1232;
+	color: #ffeaeb;
+}
+.accord-container .selected .label-dark {
+	background-color: #FFF;
+	color: #aa1232;
+}
+.green-btn {
+	background: #1DAE20;
+	background-image: -webkit-linear-gradient(top, #1DAE20, #14912D);
+	background-image: -moz-linear-gradient(top, #1DAE20, #14912D);
+	background-image: -ms-linear-gradient(top, #1DAE20, #14912D);
+	background-image: -o-linear-gradient(top, #1DAE20, #14912D);
+	border: 1px solid #007726;
+	-moz-border-radius: 32px;
+	-webkit-border-radius: 32px;
+	border-radius: 32px;
+	width: auto;
+	height: 32px;
+	color: white;
+	cursor: pointer;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 7px 24px;
+	float: right;
+}
+.green-btn a:hover, .green-btn:hover {
+	color: white;
+	background-image: -webkit-linear-gradient(top, #14912D, #1DAE20);
+	background-image: -moz-linear-gradient(top, #14912D, #1DAE20);
+	background-image: -ms-linear-gradient(top, #14912D, #1DAE20);
+	background-image: -o-linear-gradient(top, #14912D, #1DAE20);
+}
+.green-btn a {
+	width: auto;
+	height: 31px;
+	display: block;
+	color: #FFF;
+}
+.green-btn a:hover {
+	color: #FFF;
+}
+.green-btn a:visited {
+	color: #FFF;
+}
+.cart-contents {
+	margin-bottom: 5px;
+}
+.cart-contents .background {
+	background: #ffeaeb;
+	color: #aa1232;
+	font-size: 12px;
+}
+.inline-quantity-label, .unit-price {
+	font-size: 12px;
+}
+#review-cart table td.item {
+	line-height: 18px;
+}
+.form_sep {
+	border-top: 1px dashed #e3e3e3;
+	margin-top: 5px;
+	padding-top: 5px;
+}
+fieldset .row + .row {
+	margin-top: 5px;
+}
+fieldset .row {
+	margin-top: 5px;
+}
+.cust-select select {
+	position: relative;
+	z-index: 10;
+	width: 100%;
+	height: 34px;
+	line-height: 34px;
+	font-size: 14px;
+	padding:0 12px;
+	float: left;
+	left: 0;
+	border: 1px solid #ccc;
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+	background: url(../images/drop-icon.png) 98% center no-repeat;
+	    -webkit-appearance: none;
+		-moz-appearance: none;
+    appearance: none;
+}
+.cust-select {
+	position: relative;
+	clear: both;
+	overflow: hidden;
+}
+ @media only screen and (max-width: 767px) {
+.page-container {
+	padding: 20px 10px;
+}
+.page-container .page-heading {
+	font-size: 20px;
+	padding: 20px 10px;
+}
+.pull-right {
+	float: none!important;
+}
+.page-container {
+	padding: 20px;
+}
+.green-btn {
+	margin-top: 20px;
+	padding: 7px 15px;
+}
+#review-cart {
+	padding: 0px!important
+}
+#review-cart table.cart-contents {
+}
+#review-cart table.cart-contents tr td.product_image_center {
+	text-align: center
+}
+table.cart-contents tr td.text-right {
+	width: auto;
+}
+.right_sidebar {
+	display: none;
+}
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+button.pull-right {
+	float: right !important;
+	font-size: 11px;
+	padding: 7px 6px;
+}
+.green-btn {
+	margin-top: 0 !important;
+}
+table.cart-contents tr td.text-right {
+	width: 140px;
+}
+}
+
+
+/*.form_sep.cust-select select {
+	color: #ccc !important;
+}*/
+.form_sep.cust-select select option {
+	color: #333;
+}
+.greenText{color: #ccc ;}
+.greenText2{color: #ccc !important;}
+#ui-datepicker-div{left: 225px !important;
+    margin-top: 25px;
+    width: 15.7%;}
+.ui-widget-header {
+    background: #aa1232 !important;
+    border: 1px solid #aa1232 !important;}
+.ui-icon.ui-icon-circle-triangle-w{background: url(../images/arr-l.png) 0 0 !important; width:12px; height:12px;}
+.ui-icon.ui-icon-circle-triangle-e{background: url(../images/arr-r.png) 0 0 !important; width:12px; height:12px;}
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span{ margin-top:-5px !important;}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{ background:#aa1232 !important; border:1px solid #aa1232 !important; color:#fff !important;font-weight: 700 !important;
+    opacity: 1 !important;}
+#ui-datepicker-div{ top:759px !important;}
+
+
+@media only screen and (max-width : 479px) {
+#ui-datepicker-div{ left:0 !important; width:55% !important;}
+
+	}
+@media only screen and (min-width: 480px) and (max-width: 639px) {
+#ui-datepicker-div{ left:0 !important; width:55% !important;}
+
+}
+@media only screen and (min-width: 640px) and (max-width: 767px) {
+#ui-datepicker-div{ left:0 !important; width:35% !important;}
+
+}
+
+@media only screen and (min-width: 980px) and (max-width: 1199px) {
+#ui-datepicker-div{ left:0 !important; width:23% !important;}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 979px) {
+#ui-datepicker-div{ left:59px !important; width:23% !important;}
+
+}

@@ -1,0 +1,89 @@
+.epitome {
+    width: 350px;
+    color:#555555;
+}
+
+.epitome h3 {
+    font-size:1.2em;
+    color:#3c3c3e;
+    margin:0;
+}
+
+.epitome h4 {
+    font-size:1.1em;
+    color:#848488;
+    margin:0;
+}
+
+.epitome img {
+    width:50px;
+    height:50px;
+    float:left;
+    margin:0.4em 1em 0 0;
+}
+
+.epitome .location {
+    margin:.4em 0;
+    font-size:0.87em;
+    color:#919191;
+}
+
+.epitome .rate {
+    font-size:.9em;
+    color:#705938;
+    font-weight:bold;
+}
+
+.epitome .left {
+    float:left;
+    width:240px;
+    color:#919191;
+}
+
+.epitome .feedback {
+    font-size:0.8em;
+    vertical-align:middle;
+}
+
+.epitome .feedbackRating {
+    margin:0 0 2px 0;
+    vertical-align:middle;
+}
+
+.epitome .right {
+    float:right;
+    font-size:0.8em;
+    text-align:right;
+}
+
+.epitome .left div, .epitome .right div {
+    line-height:16px;
+    height:16px;
+    overflow:hidden;
+}
+
+.epitome .desc {
+    font-size:.88em;
+    color:#919191;
+    padding:1em 0;
+    clear:both;
+}
+
+.epitome .skills, .epitome .affiliated, .epitome .groups {
+    font-size:0.8em;
+}
+
+.epitome .affiliated, .epitome .groups {
+    color:#919191;
+}
+
+.epitome .notes {
+    border-top:solid 1px #9B96A0;
+    margin-top:1.5em;
+    padding-top:0.3em;
+    font-size:0.8em;
+}
+
+a.contractor_epitome:hover {
+    text-decoration:none;
+}

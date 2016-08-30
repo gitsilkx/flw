@@ -1,0 +1,39 @@
+.simple-company-selector {
+    display: inline-block;
+    position: relative;
+    overflow: visible;
+}
+
+.simple-company-selector .display {
+    cursor: default;
+    margin-bottom: 0;
+    font-size: .8em;
+    font-weight: bold;
+    letter-spacing: .03em;
+    color: #345b9e;
+    position: relative;
+    padding: 6px 0px 5px 20px;
+}
+
+.simple-company-selector .display span {
+    vertical-align: baseline;
+    line-height: 1.38em;
+    padding-right: 10px;
+}
+
+.simple-company-selector .display.many {
+    cursor: pointer;
+}
+
+.simple-company-selector .display.many .arrow {
+    width: 10px;
+    height: 10px;
+    background: url('/images/navigation_sprite.png') -18px -76px no-repeat;
+    position: absolute;
+    right: -10px;
+    top: 14px;
+}
+
+.simple-company-selector .display.many:active .arrow, .simple-company-selector .display.many.open .arrow {
+    background-position: -36px -76px;
+}

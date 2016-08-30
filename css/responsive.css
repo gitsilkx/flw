@@ -1,0 +1,489 @@
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.standard,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.reviews,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.text {
+        height: 69px;
+        width: 69px;
+        background-image: url('../images/badge_small_compressed.png')!important
+    }
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.standard #tslogo_db8d3657bdbe440c985ae127463eaad4 .rating_db8d3657bdbe440c985ae127463eaad4,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.reviews #tslogo_db8d3657bdbe440c985ae127463eaad4 .rating_db8d3657bdbe440c985ae127463eaad4,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.text #tslogo_db8d3657bdbe440c985ae127463eaad4 .rating_db8d3657bdbe440c985ae127463eaad4 {
+        display: none
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 648px) {
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.standard,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.reviews,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.text {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 648px) {
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.small {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 648px) {
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.custom,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.custom_reviews {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.custom,
+    #tsbadge_db8d3657bdbe440c985ae127463eaad4.custom_reviews {
+        display: block
+    }
+}
+
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node {
+        display: none!important
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        display: none!important
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node {
+        display: none!important
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        display: none!important
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 648px) {
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node {
+        overflow: hidden;
+        width: 100%;
+        display: block!important;
+        background-color: #fff;
+        position: absolute;
+        left: 0;
+        clear: both;
+        margin-top: 20px;
+        height: 225px;
+        border-top: 0
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+        width: 100%;
+        font-size: 19px;
+        font-weight: bold;
+        font-style: normal;
+        font-family: arial;
+        background: #f7f7f5;
+        border-bottom: 2px solid #c6c6c4;
+        padding-top: 12px;
+        padding-bottom: 12px;
+        padding-left: 10px;
+        color: #000;
+        text-align: left;
+        -webkit-box-shadow: inset 0 5px 3px #f2f2f2;
+        -moz-box-shadow: inset 0 5px 3px #f2f2f2;
+        box-shadow: inset 0 5px 3px #f2f2f2
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader {
+        width: 206px;
+        height: 50px;
+        display: block;
+        background-image: url('../images/wortbildmarke-de_DE.png');
+        background-size: 206px 50px;
+        background-repeat: no-repeat
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .en_GB,
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .en_EU {
+        background-image: url('../images/wortbildmarke-en_GB.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .de_AT,
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .de_CH {
+        background-image: url('../images/wortbildmarke-de_DE.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .fr_FR,
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .fr_BE,
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .fr_CH {
+        background-image: url('../images/wortbildmarke-fr_FR.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .es_ES {
+        background-image: url('../images/wortbildmarke-es_ES.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .it_IT {
+        background-image: url('../images/wortbildmarke-it_IT.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .pl_PL {
+        background-image: url('../images/wortbildmarke-pl_PL.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .nl_NL,
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle .responsiveHeader .nl_BE {
+        background-image: url('../images/wortbildmarke-nl_NL.png')
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        float: left;
+        width: 70%;
+        color: #000;
+        padding-left: 10px;
+        padding-top: 10px
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox {
+        height: 40px;
+        margin: 0 0 3px
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+        color: #363833;
+        font: bold 20px arial, sans-serif!important;
+        padding: 0 0 0 30px;
+        display: table-cell;
+        vertical-align: middle;
+        height: 40px;
+        text-align: left
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsone {
+        background: url("../images/box_one.gif") no-repeat scroll 0 0 transparent;
+        background-size: 25px 41px;
+        background-position: left top
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tstwo {
+        background: url("../images/box_two.gif") no-repeat scroll 0 0 transparent;
+        background-size: 25px 41px;
+        background-position: left top
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsthree {
+        background: url("../images/box_three.gif") no-repeat scroll 0 0 transparent;
+        background-size: 25px 41px;
+        background-position: left top
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustBadgeResponsive {
+        margin-top: 15px;
+        display: block;
+        z-index: 9999999;
+        background-image: url('../images/badge_retina.png');
+        background-size: 120px 118px;
+        background-position: left top;
+        float: right;
+        width: 120px;
+        height: 118px;
+        cursor: pointer
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        width: 50%
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+        font-size: 15px!important
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle span {
+        padding-right: 80px
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        width: 55%
+    }
+    #tsbadgeResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+        font-size: 12px!important
+    }
+}
+
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node {
+        display: none!important
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        display: none!important
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node {
+        display: none!important
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        display: none!important
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle {
+        display: none!important
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 648px) {
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-weight: inherit;
+        font-style: inherit;
+        font-size: 100%;
+        font-family: arial, helvetica, san-serif;
+        vertical-align: baseline;
+        background: none no-repeat scroll left center transparent;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: normal;
+        z-index: 2147483647!important;
+        overflow: hidden;
+        width: 100%;
+        display: block!important;
+        background-color: #f3f3f3;
+        left: 0;
+        clear: both;
+        margin-top: 0;
+        padding-top: 0;
+        border-bottom: 1px solid #d3d3d3;
+        border-top: 1px solid #d3d3d3;
+        text-align: left
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcardResponsiveTitle {
+        cursor: pointer;
+        font-size: 19px;
+        font-weight: bold;
+        font-style: normal;
+        background: #f7f7f5;
+        border-bottom: 1px solid #d3d3d3;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        color: #000;
+        text-align: left;
+        display: table;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        width: 100%;
+        vertical-align: middle
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcardResponsiveTitle .checkoutTrustcardResponsiveTitleText {
+        display: table-cell;
+        vertical-align: middle
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcard_db8d3657bdbe440c985ae127463eaad4 {
+        clear: both
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcardResponsiveTrustmark {
+        display: table-cell;
+        vertical-align: middle;
+        z-index: 9999999;
+        background-image: url('../images/badge_custom.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 60px;
+        height: 60px
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcardResponsiveContent_db8d3657bdbe440c985ae127463eaad4 {
+        background-color: #fff;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        border-bottom: 1px solid #d3d3d3;
+        max-height: 300px;
+        -webkit-transition: all .1s;
+        -moz-transition: all .1s;
+        -o-transition: all .1s;
+        transition: all .1s;
+        width: auto;
+        display: block
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcardResponsiveContent_db8d3657bdbe440c985ae127463eaad4 .check {
+        color: #363833;
+        padding-bottom: 8px;
+        padding-top: 2px;
+        padding-left: 27px;
+        background-image: url("../images/check.gif");
+        background-repeat: no-repeat;
+        background-position: 0 2px;
+        margin-bottom: 0;
+        font-size: 16px
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .checkoutTrustcardResponsiveContent_db8d3657bdbe440c985ae127463eaad4.collapsed {
+        max-height: 0;
+        overflow: hidden;
+        display: none;
+        border: 0;
+        -webkit-transition: all .1s;
+        -moz-transition: all .1s;
+        -o-transition: all .1s;
+        transition: all .1s
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .tsfooter {
+        display: table;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 30px;
+        background-image: url("../images/checkoutTrustcardArrow.png");
+        background-position: center right;
+        background-size: 15px 8px;
+        background-repeat: no-repeat;
+        cursor: pointer
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .tsfooter.collapsed {
+        background-image: url("../images/checkoutTrustcardArrowDown.png")
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .tsfooter p {
+        font-size: 13px;
+        display: table-cell;
+        vertical-align: middle;
+        width: 100%;
+        *padding-top: 0;
+        color: #9d9d95
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .tsfooter p.date {
+        margin-right: 24px;
+        float: right
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .tsfooter p.date a {
+        color: blue
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .tsfooter .icon_arrow_right_blue {
+        display: inline-block;
+        vertical-align: middle;
+        width: 4px;
+        height: 9px;
+        background: url('../images/common.png') no-repeat;
+        background-position: -261px -1px;
+        text-indent: -9999px
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .btnBig.btnAnanas {
+        border: 1px solid #f9bd8b;
+        background: #ffdc0f;
+        background: -moz-linear-gradient(top, #f4eea0 0, #ffdc0f 14%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f4eea0), color-stop(14%, #ffdc0f));
+        background: -webkit-linear-gradient(top, #f4eea0 0, #ffdc0f 14%);
+        background: -o-linear-gradient(top, #f4eea0 0, #ffdc0f 14%);
+        background: -ms-linear-gradient(top, #f4eea0 0, #ffdc0f 14%);
+        background: linear-gradient(to bottom, #f4eea0 0, #ffdc0f 14%);
+        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+        color: #363833!important;
+        border-radius: 5px;
+        font-size: 16px;
+        margin-top: 4px;
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        display: block;
+        padding: 8px 10px;
+        text-align: center;
+        width: 100%;
+        line-height: 100%;
+        cursor: pointer
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .btnBig.btnAnanas:hover {
+        -webkit-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        background: #ffdc0f;
+        color: #060606
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .btnBig.btnSmall.btnGrey {
+        border: 1px solid #dad9d5;
+        background: #ecece7;
+        background: -moz-linear-gradient(top, #ecece7 0, #fff 20%, #ecece7 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ecece7), color-stop(20%, #fff), color-stop(100%, #ecece7));
+        background: -webkit-linear-gradient(top, #ecece7 0, #fff 20%, #ecece7 100%);
+        background: -o-linear-gradient(top, #ecece7 0, #fff 20%, #ecece7 100%);
+        background: -ms-linear-gradient(top, #ecece7 0, #fff 20%, #ecece7 100%);
+        background: linear-gradient(to bottom, #ecece7 0, #fff 20%, #ecece7 100%);
+        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+        color: #060606;
+        border-radius: 3px;
+        font-size: 13px;
+        box-sizing: border-box;
+        display: block;
+        padding: 3px 10px;
+        text-align: center;
+        width: 100%;
+        cursor: pointer
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .btnBig.btnSmall.btnGrey:hover {
+        background: #f6f8f3;
+        background: -moz-linear-gradient(top, #f6f8f3 0, #fff 100%);
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f8f3), color-stop(100%, #fff));
+        background: -webkit-linear-gradient(top, #f6f8f3 0, #fff 100%);
+        background: -o-linear-gradient(top, #f6f8f3 0, #fff 100%);
+        background: -ms-linear-gradient(top, #f6f8f3 0, #fff 100%);
+        background: linear-gradient(to bottom, #f6f8f3 0, #fff 100%);
+        -webkit-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 2px 5px 0 rgba(0, 0, 0, 0.1);
+        border: 1px solid #c6c6c2;
+        color: #060606
+    }
+}
+
+@media only screen and (max-width: 460px) {
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        width: 50%
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+        font-size: 15px!important
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsTitle span {
+        padding-right: 80px
+    }
+}
+
+@media only screen and (max-width: 418px) {
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent {
+        width: 55%
+    }
+    #checkoutTrustcardResponsive_db8d3657bdbe440c985ae127463eaad4node .trustElementsContent .tsbox strong {
+        font-size: 12px!important
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 648px) {
+    #tsbadgeReviewsWrapper_db8d3657bdbe440c985ae127463eaad4 {
+        display: none
+    }
+    .js #smenu {
+		display:none;
+	}
+	
+	.js .slicknav_menu {
+		display:block;
+	}
+    
+    
+}
+
+@media only screen and (min-width: 649px) and (max-width: 1024px) {
+    #tsbadgeReviewsWrapper_db8d3657bdbe440c985ae127463eaad4 {
+        display: table
+    }
+}

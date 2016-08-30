@@ -1,0 +1,107 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+# First rewrite to HTTPS:
+# Don't put www. here. If it is already there it will be included, if not
+# the subsequent rule will catch it.
+RewriteRule .* https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+# Now, rewrite any request to the wrong domain to use www.flowerwyz.com
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule .* https://www.%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteRule ^index.htm$ index.php?pg_id=37&category=$2 [T=application/x-httpd-php,L]
+RewriteRule ^contact.htm$ contact.php [L]
+RewriteRule ^wedding-anniversary-flowers-wedding-anniversary-gifts-ideas.htm$  categories.php?category=an&pg_id=1 [L]
+RewriteRule ^birthday-flowers-birthday-gifts-for-mom-birthday-delivery-ideas.htm$  categories.php?category=bd&pg_id=2 [L]
+RewriteRule ^easter-flowers-easter-flower-arrangements.htm$  categories.php?category=ea&pg_id=3 [L]
+RewriteRule ^same-day-flower-delivery-same-day-flowers-today.htm$  categories.php?category=apop&pg_id=4 [L]
+RewriteRule ^next-day-flower-delivery-next-day-flowers-tomorrow.htm$  categories.php?category=apop&pg_id=5 [L]
+RewriteRule ^discount-flowers-flower-deals-flower-coupons-cheap-flowers-free-delivery.htm$  categories.php?category=apa&pg_id=6 [L]
+RewriteRule ^wholesale-flowers-wholesale-roses-bulk-flowers-online.htm$  categories.php?category=apop&pg_id=7 [L]
+RewriteRule ^flower-shops-online-flower-stores.htm$  categories.php?category=apop&pg_id=8 [L]
+RewriteRule ^order-flowers-online-for-delivery-where-to-buy-flowers-online.htm$  categories.php?category=apop&pg_id=9 [L]
+RewriteRule ^mothers-day-gifts-mothers-day-flowers-for-mothers-day.htm$  categories.php?category=md&pg_id=10 [L]
+RewriteRule ^sympathy-flowers-delivery-sympathy-gift-baskets.htm$  categories.php?category=sy&pg_id=11 [L]
+RewriteRule ^valentines-day-flowers-valentines-flowers-delivery.htm$  categories.php?category=vd&pg_id=12 [L]
+RewriteRule ^get-well-gift-baskets-get-well-flowers-online.htm$  categories.php?category=gw&pg_id=13 [L]
+RewriteRule ^fresh-flowers.htm$  categories.php?category=apop&pg_id=14 [L]
+RewriteRule ^local-flowers.htm$  categories.php?category=apop&pg_id=15 [L]
+RewriteRule ^international-flowers.htm$  categories.php?category=apop&pg_id=16 [L]
+RewriteRule ^fresh-flowers/cheap-roses-a-dozen-roses-buy-roses-delivery-online.htm$  categories.php?category=r&pg_id=17 [L]
+RewriteRule ^local-flowers/atlanta-florists-atlanta-flower-shops-atlanta-flower-delivery-online.htm$  categories.php?category=apop&pg_id=18 [L]
+RewriteRule ^local-flowers/baltimore-florists-baltimore-flower-shops-baltimore-flower-delivery-online.htm$  categories.php?category=apop&pg_id=19 [L]
+RewriteRule ^local-flowers/boston-florists-boston-flower-shops-boston-flower-delivery-online.htm$  categories.php?category=apop&pg_id=20 [L]
+RewriteRule ^local-flowers/chicago-florists-chicago-flower-shops-chicago-flower-delivery-online.htm$  categories.php?category=apop&pg_id=21 [L]
+RewriteRule ^local-flowers/dallas-florists-dallas-flower-shops-dallas-flower-delivery-online.htm$  categories.php?category=apop&pg_id=22 [L]
+RewriteRule ^local-flowers/denver-florists-denver-flower-shops-denver-flower-delivery-online.htm$  categories.php?category=apop&pg_id=23 [L]
+RewriteRule ^local-flowers/houston-florists-houston-flower-shops-houston-flower-delivery-online.htm$  categories.php?category=apop&pg_id=24 [L]
+RewriteRule ^local-flowers/minneapolis-florists-minneapolis-flower-shops-minneapolis-flower-delivery-online.htm$  categories.php?category=apop&pg_id=25 [L]
+RewriteRule ^local-flowers/nyc-florists-nyc-flower-shops-nyc-flower-delivery-online-newyork.htm$  categories.php?category=apop&pg_id=26 [L]
+RewriteRule ^local-flowers/pittsburgh-florists-pittsburgh-flower-shops-pittsburgh-flower-delivery-online.htm$  categories.php?category=apop&pg_id=27 [L]
+RewriteRule ^local-flowers/san-diego-florists-san-diego-flower-shops-san-diego-flower-delivery-online.htm$  categories.php?category=apop&pg_id=39 [L]
+RewriteRule ^local-flowers/san-francisco-florists-san-francisco-flower-shops-san-francisco-flower-delivery-online.htm$  categories.php?category=apop&pg_id=28 [L]
+RewriteRule ^local-flowers/seattle-florists-seattle-flower-shops-seattle-flower-delivery-online.htm$  categories.php?category=apop&pg_id=29 [L]
+RewriteRule ^local-flowers/st-louis-florists-st-louis-flower-shops-st-louis-flower-delivery-online.htm$  categories.php?category=apop&pg_id=30 [L]
+RewriteRule ^local-flowers/tulsa-florists-tulsa-flower-shops-tulsa-flower-delivery-online.htm$  categories.php?category=apop&pg_id=31 [L]
+RewriteRule ^international-flowers/send-flowers-to-canada-from-usa.htm$  categories.php?category=apop&pg_id=32 [L]
+RewriteRule ^local-flowers/la-florists-la-flower-shops-los-angeles-flower-delivery-online.htm$  categories.php?category=apop&pg_id=38 [L]
+RewriteRule ^floral-arrangements-floral-delivery-from-local-florists-and-online-florists.htm$  categories.php?category=o&pg_id=40 [L]
+RewriteRule ^send-plants-send-a-plant-delivery-orchid-delivery.htm$  categories.php?category=p&pg_id=41 [L]
+RewriteRule ^bouquet-of-flowers-flower-bouquets-balloon-bouquets-bouquet-of-roses.htm$  categories.php?category=apop&pg_id=42 [L]
+RewriteRule ^exotic-flowers-and-exotic-plants-for-sale.htm$  categories.php?category=apop&pg_id=43 [L]
+RewriteRule ^funeral-flowers-for-funeral-flower-arrangements.htm$  categories.php?category=fp&pg_id=44 [L]
+RewriteRule ^wedding-bouquets-bridal-bouquets-flowers-for-wedding-flowers-online.htm$  categories.php?category=apop&pg_id=45 [L]
+RewriteRule ^international-flowers/montreal-florists-montreal-flower-delivery-montreal-canada.htm$  categories.php?category=apop&pg_id=46 [L]
+RewriteRule ^international-flowers/toronto-florists-toronto-flower-delivery-toronto-canada.htm$  categories.php?category=apop&pg_id=47 [L]
+RewriteRule ^international-flowers/quebec-florists-quebec-flower-delivery-quebec-canada.htm$  categories.php?category=apop&pg_id=48 [L]
+RewriteRule ^international-flowers/halifax-florists-halifax-flower-delivery-halifax-canada.htm$  categories.php?category=apop&pg_id=49 [L]
+RewriteRule ^international-flowers/hamilton-florists-hamilton-flower-delivery-hamilton-canada.htm$  categories.php?category=apop&pg_id=50 [L]
+RewriteRule ^international-flowers/ottawa-florists-ottawa-flower-delivery-ottawa-canada.htm$  categories.php?category=apop&pg_id=51 [L]
+RewriteRule ^international-flowers/portland-florists-portland-flower-delivery-portland-canada.htm$  categories.php?category=apop&pg_id=52 [L]
+RewriteRule ^cheap-centerpiece-ideas-flower-centerpieces-dining-table-centerpieces-floating-candle-centerpieces.htm$  categories.php?category=c&pg_id=53 [L]
+RewriteRule ^funeral-flowers/funeral-casket-sprays-funeral-casket-flowers.htm$  categories.php?category=fc&pg_id=54 [L]
+RewriteRule ^funeral-flowers/popular-funeral-plants-for-funerals.htm$  categories.php?category=fp&pg_id=55 [L]
+RewriteRule ^funeral-flowers/cheap-funeral-wreaths-for-funerals.htm$  categories.php?category=fw&pg_id=56 [L]
+RewriteRule ^funeral-flowers/cheap-funeral-sprays-flower-sprays-funeral-standing-sprays.htm$  categories.php?category=fs&pg_id=57 [L]
+RewriteRule ^funeral-flowers/funeral-baskets-funeral-gift-baskets-bereavement-gift-baskets.htm$  categories.php?category=fb&pg_id=58 [L]
+RewriteRule ^thank-you-flowers-delivery-thank-you-flower-arrangements.htm$  categories.php?category=ty&pg_id=59 [L]
+RewriteRule ^flower-of-love-flowers-romantic-flowers-for-you.htm$  categories.php?category=lr&pg_id=60 [L]
+RewriteRule ^christmas-centerpieces-christmas-plants-christmas-flower-arrangements.htm$  categories.php?category=cm&pg_id=61 [L]
+RewriteRule ^new-baby-flowers-new-baby-gifts-ideas.htm$  categories.php?category=nb&pg_id=62 [L]
+
+RewriteEngine On
+
+RewriteEngine On
+RewriteCond %{HTTPS} !^on$
+RewriteRule (.*) https://www.flowerwyz.com/$1 [R,L] [R=301,L]
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^international\-flowers\/send\-flowers\-to\-russia\-from\-usa\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^international\-flowers\/send\-flowers\-to\-germany\-from\-usa\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^international\-flowers\/send\-flowers\-to\-india\-from\-usa\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^international\-flowers\/send\-flowers\-to\-mexico\-from\-usa\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^fresh\-flowers\/cheap\-sunflower\-bouquet\-buy\-sunflower\-delivery\-online\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^fresh\-flowers\/cheap\-calla\-lily\-bouquet\-buy\-calla\-lilies\-online\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^index\.php$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^flowerwyz\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.flowerwyz\.com$
+RewriteRule ^index\.htm$ "https\:\/\/www\.flowerwyz\.com\/" [R=301,L]
+
