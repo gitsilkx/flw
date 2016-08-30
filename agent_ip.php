@@ -7,7 +7,7 @@ if(isset($_POST['submit'])){
     mysql_query("INSERT INTO " . TABLE_AGENT_IP." (`agent_ip`) VALUES ('".$agent_ip."')");    
 }
 ?>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
     <!--<html lang="en">-->
     <head>
         <meta name="robots" content="noindex,nofollow" />
